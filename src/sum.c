@@ -15,15 +15,32 @@ int sum (int n)
     return 1;
 }
 
-/* Sum integers 1 to n */
+/* Sum integers 1 to n    */
+/* Pre: n >= 1, total = 0 */
+/* Post: Sum from 1 to n  */
 int sumtail (int n, int total)
 {
-    return 0;
+    assert(n >= 1);
+
+    if(n == 1) {
+        return total + 1;
+    } else {
+        return sumtail(n - 1, total + n);
+  }
 }
 
-/* Sum integers 1 to n */
+/* Sum integers 1 to n   */
+/* Pre: n >= 1           */
+/* Post: Sum from 1 to n */
 int sumwhile (int n)
 {
-  return 0;
-}
+  assert(n >= 1);
+    //for loop
+    int sum = 0;
+    for(int i = 0; i <= n; i++) {
+      //Taking the sum
+      sum += i;
+    }
 
+    return sum;
+}

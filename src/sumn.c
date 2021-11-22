@@ -4,5 +4,12 @@
 
 int sumn (int n)
 {
-    return 0;
+   assert(n >= 1);
+
+   if(n == 1) {
+       return 2 * n - 1;
+    
+   } else {
+       return (2 * n - 1) + sumn(n-1);
+    }
 }
