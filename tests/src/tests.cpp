@@ -40,12 +40,12 @@ TEST_CASE("sumn")
 TEST_CASE("fib")
 {
    // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(fib(1, 1, 1) == 1);
-    REQUIRE(fib(2, 1, 1) == 1);
-    REQUIRE(fib(3, 1, 1) == 2);
-    REQUIRE(fib(5, 2, 2) == 10);
-    REQUIRE(fib(12, 1, 1) == 144);
-    REQUIRE(fib(12, 2, 2) == 288);
+    REQUIRE(fib(1, 1, 0) == 1);
+    REQUIRE(fib(2, 1, 0) == 1);
+    REQUIRE(fib(3, 1, 0) == 2);
+    REQUIRE(fib(4, 1, 0) == 3);
+    REQUIRE(fib(5, 1, 0) == 5);
+    REQUIRE(fib(10, 1, 0) == 55);
 }
 
 

@@ -1,5 +1,5 @@
 #include "sumn.h"
-
+#include<assert.h>
 #include<stdio.h>
 
 int sumn (int n)

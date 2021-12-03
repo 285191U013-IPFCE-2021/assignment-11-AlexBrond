@@ -1,6 +1,6 @@
 project(tests)
 
-// Set O2 flag
+Set (O2 flag)
 SET(GCC_COVERAGE_COMPILE_FLAGS "-O2")
 add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})
 
